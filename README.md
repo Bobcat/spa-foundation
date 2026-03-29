@@ -2,7 +2,10 @@
 
 > Lightweight JavaScript package for Single-Page Applications (SPA) with Routing, Sidebar/Shell State, Persistence, Theme Presets, Browser History, Keyboard Shortcuts, and Dialogs. Zero dependencies, no build step.
 
-![Feature Demo Desktop](./assets/demo-desktop.png)
+<p align="left" width="100%">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./readme/assets/demo-desktop.png" width="78%" alt="Feature Demo Desktop" />
+</p>
 
 ## Live Demo
 
@@ -42,7 +45,7 @@ This repository contains the `@spa-foundation/core` package.
 
 - `core/`: package source and exported CSS
 - `examples/feature-demo/`: no-build example app used in the live demo
-- `assets/`: screenshots used in this README
+- `readme/assets/`: screenshots used in this README
 
 ## Theme Presets
 
@@ -52,16 +55,20 @@ The foundation provides two CSS presets that can be switched at runtime, plus a 
 - **Classic**: Standard material dashboard layout with contrasting sidebar and active states.
 - **Custom**: A `preset-custom.css.template` file is included as a starting point to define your own project-specific design tokens.
 
-<p align="center">
-  <img src="./assets/preset-modern.png" width="48%" alt="Modern Preset" />
-  <img src="./assets/preset-classic.png" width="48%" alt="Classic Preset" />
+<p align="left" width="100%">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./readme/assets/preset-modern.png" width="38%" alt="Modern Preset" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./readme/assets/preset-classic.png" width="38%" alt="Classic Preset" />
 </p>
 
 ## Mobile Layout
 
 The shell adapts to mobile screens below 600px, turning the sidebar into a fixed top bar with an off-canvas menu.
 
-<p align="center">
-  <img src="./assets/demo-mobile-collapsed.jpg" width="48%" alt="Mobile Collapsed" />
-  <img src="./assets/demo-mobile-expanded.jpg" width="48%" alt="Mobile Expanded" />
+<p align="left" width="100%">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./readme/assets/demo-mobile-collapsed.jpg" width="28%" alt="Mobile Collapsed" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./readme/assets/demo-mobile-expanded.jpg" width="28%" alt="Mobile Expanded" />
 </p>
