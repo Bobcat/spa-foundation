@@ -1,12 +1,12 @@
 # spa-foundation
 
-> Lightweight JavaScript package for Single-Page Applications (SPA) with Routing, Sidebar/Shell State, Persistence, Theme Presets, Browser History, Keyboard Shortcuts, and Dialogs. Zero dependencies, no build step.
+Lightweight JavaScript package for Single-Page Applications (SPA) with Routing, Sidebar/Shell State, Persistence, Theme Presets, Browser History, Keyboard Shortcuts, and Dialogs. Zero dependencies, no build step.
 
 ## Live Demo
 
-[Feature Demo](https://omniscripta.com/spa-foundation/examples/feature-demo/)
+Open the live demo to inspect the package in a browser.
 
----
+[Feature Demo](https://omniscripta.com/spa-foundation/examples/feature-demo/)
 
 ## Package
 
