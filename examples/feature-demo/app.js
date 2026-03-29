@@ -55,8 +55,6 @@ const shellPersistence = createShellPersistence({
   getRoundedSidebar
 });
 
-const dockLeftSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3.5"></rect><path d="M8.5 4.9V19.1"></path></svg>';
-const dockRightSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3.5"></rect><path d="M15.5 4.9V19.1"></path></svg>';
 
 const infoModalController = new ModalController(infoModal, {
   backdropEvent: "click",
@@ -272,23 +270,7 @@ function syncSidebarToggleIcon() {
 
   if (!sidebarToggleIcon) return;
 
-  const activePreset = getActivePreset();
-  const useDockIcons = activePreset === "modern";
-  renderToggleIcon(sidebarToggleIcon, useDockIcons, isOpen);
   sidebarToggleIcon.dataset.ready = "true";
-}
-
-function renderToggleIcon(target, useDockIcons, isOpen) {
-  if (!target) return;
-
-  if (useDockIcons) {
-    target.classList.remove("material-symbols-outlined");
-    target.innerHTML = isOpen ? dockLeftSvg : dockRightSvg;
-    return;
-  }
-
-  target.classList.add("material-symbols-outlined");
-  target.textContent = "menu";
 }
 
 function getActivePreset() {

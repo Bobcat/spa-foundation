@@ -4,7 +4,7 @@
 
 <p align="left" width="100%">
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./readme/assets/demo-desktop.png" width="78%" alt="Feature Demo Desktop" />
+  <img src="./readme/assets/demo-desktop.png" width="72%" alt="Feature Demo Desktop" />
 </p>
 
 ## Live Demo
@@ -43,7 +43,7 @@ This repository contains the `@spa-foundation/core` package.
 
 ## Repository Layout
 
-- `core/`: package source and exported CSS
+- `core/`: package source, exported CSS, and preset assets
 - `examples/feature-demo/`: no-build example app used in the live demo
 - `readme/assets/`: screenshots used in this README
 
