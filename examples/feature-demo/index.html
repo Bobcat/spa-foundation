@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SPA Foundation Feature Demo</title>
+  <meta name="description" content="Feature demo, no-build SPA Foundation example." />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link id="presetStylesheet" rel="stylesheet" href="../../core/css/preset-modern.css" />
+</head>
+
+<body>
+  <div class="app-container">
+    <aside id="sidebar" class="sidebar" aria-label="Main navigation">
+      <div class="sidebar-header">
+        <div class="sidebar-brand" aria-label="SPA Foundation">
+          <span class="material-symbols-outlined" aria-hidden="true">deployed_code</span>
+          <span class="sidebar-brand-title">Feature Demo</span>
+        </div>
+        <button id="sidebarToggle" class="icon-btn" type="button" aria-label="Toggle sidebar">
+          <span id="sidebarToggleIcon" class="toggle-icon material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+      <div class="sidebar-content">
+        <ul id="nav" class="nav-links">
+          <li data-route="introduction" class="active"><span class="material-symbols-outlined" aria-hidden="true">home</span><span class="link-text">Introduction</span></li>
+          <li data-route="router"><span class="material-symbols-outlined" aria-hidden="true">route</span><span class="link-text">Routing</span></li>
+          <li data-route="shell-state"><span class="material-symbols-outlined" aria-hidden="true">sync</span><span class="link-text">Persistence</span></li>
+          <li data-route="shell"><span class="material-symbols-outlined" aria-hidden="true">space_dashboard</span><span class="link-text">Sidebar State</span></li>
+          <li data-route="presets"><span class="material-symbols-outlined" aria-hidden="true">style</span><span class="link-text">Theme Presets</span></li>
+          <li data-route="history"><span class="material-symbols-outlined" aria-hidden="true">history</span><span class="link-text">Browser History</span></li>
+          <li data-route="shortcuts"><span class="material-symbols-outlined" aria-hidden="true">keyboard</span><span class="link-text">Keyboard Shortcuts</span></li>
+          <li data-route="dialogs"><span class="material-symbols-outlined" aria-hidden="true">chat_bubble</span><span class="link-text">Dialogs</span></li>
+        </ul>
+        <div class="sidebar-footer-nav">
+          <ul class="nav-links">
+            <li data-route="color-palette"><span class="material-symbols-outlined" aria-hidden="true">palette</span><span class="link-text">Color Palette</span></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main id="appRoot" class="main-content" aria-live="polite"></main>
+  </div>
+  <div id="infoModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
+    <div id="infoModalCard" class="modal-card dialog-card">
+      <div id="infoModalDragHandle" class="dialog-topbar dialog-drag-handle" title="Drag to move">
+        <div id="infoTitle" class="dialog-title">Info</div>
+        <div class="dialog-grip" aria-hidden="true">⋮⋮</div>
+      </div>
+      <div class="dialog-body">
+        <p id="infoBody"></p>
+        <div class="modal-actions">
+          <button id="closeInfoBtn" class="primary" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "spa-foundation",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "echo 'No build configured yet'",
+    "test": "echo 'No tests configured yet'"
+  }
+}

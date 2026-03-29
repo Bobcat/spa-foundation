@@ -1,0 +1,352 @@
+@import "../../core/css/base.css";
+@import "../../core/css/shell.css";
+
+.view {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.feature-view {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feature-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.view h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--color-slate-900);
+}
+
+.view > p {
+  margin: 8px 0 0;
+  color: var(--color-slate-600);
+}
+
+.grid {
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.feature-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.intro-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.intro-wide {
+  grid-column: 1 / -1;
+}
+
+.panel,
+.stack {
+  background: var(--color-white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.panel {
+  padding: 14px;
+}
+
+.panel h2 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.panel p {
+  margin: 0;
+  color: var(--color-slate-600);
+}
+
+.panel > p + .actions,
+.panel > p + .stack,
+.panel > p + .code-block {
+  margin-top: 14px;
+}
+
+.stack {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.stack li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-slate-200);
+}
+
+.stack li:last-child {
+  border-bottom: 0;
+}
+
+.feature-list {
+  margin-top: 12px;
+}
+
+.feature-list li {
+  justify-content: flex-start;
+}
+
+.toggle-icon {
+  visibility: hidden;
+}
+
+.toggle-icon[data-ready="true"] {
+  visibility: visible;
+}
+
+.metric-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin-top: 14px;
+}
+
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
+.metric-label {
+  font-size: 0.78rem;
+  color: var(--color-slate-600);
+}
+
+.metric-value {
+  font-size: 1.15rem;
+  color: var(--color-slate-900);
+}
+
+[data-shell-current-state],
+[data-shell-saved-state] {
+  font-size: 0.92rem;
+}
+
+.actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.actions a {
+  display: inline-block;
+  color: var(--primary);
+  font-size: 0.93rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.actions a:hover {
+  color: var(--color-blue-600);
+}
+
+.actions a + a {
+  margin-left: 6px;
+}
+
+.feature-view button,
+#closeInfoBtn {
+  border: 1px solid var(--border);
+  background: var(--color-white);
+  color: var(--color-slate-700);
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.feature-view button:hover,
+#closeInfoBtn:hover {
+  background: var(--color-surface-100);
+}
+
+.feature-view button.primary,
+#closeInfoBtn.primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--color-white);
+}
+
+.feature-view button.primary:hover,
+#closeInfoBtn.primary:hover {
+  background: var(--color-blue-600);
+  border-color: var(--color-blue-600);
+}
+
+.preset-btn {
+  min-width: 92px;
+  background: var(--color-white);
+  border-color: var(--border);
+  color: var(--color-slate-700);
+}
+
+.preset-btn.active {
+  background: var(--color-white);
+  border-color: var(--primary);
+  color: var(--color-slate-900);
+  box-shadow: 0 0 0 1px var(--primary);
+}
+
+.preset-btn.active:hover {
+  background: var(--color-white);
+  border-color: var(--primary);
+  color: var(--color-slate-900);
+}
+
+.preset-btn:focus-visible {
+  outline: 2px solid rgba(31, 111, 235, 0.35);
+  outline-offset: 2px;
+}
+
+.code-panel {
+  padding-bottom: 10px;
+}
+
+.code-block {
+  margin: 12px 0 0;
+  padding: 14px;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.code-block code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  white-space: pre;
+}
+
+.sidebar-footer-nav {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.sidebar-content {
+  overflow: visible;
+}
+
+.nav-links li[data-tooltip],
+#sidebarToggle[data-tooltip] {
+  position: relative;
+}
+
+.nav-links li[data-tooltip] {
+  overflow: visible;
+}
+
+.nav-links li[data-tooltip]::after,
+#sidebarToggle[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: fixed;
+  top: var(--tooltip-y, 0);
+  left: var(--tooltip-x, 0);
+  transform: translate(12px, 12px);
+  padding: 6px 10px;
+  border-radius: 4px;
+  background: rgba(15, 23, 42, 0.94);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s ease;
+  z-index: 300;
+}
+
+.nav-links li[data-tooltip]:hover::after,
+#sidebarToggle[data-tooltip]:hover::after {
+  opacity: 1;
+}
+
+body[data-preset="modern"] .nav-links li[data-tooltip]::after,
+body[data-preset="modern"] #sidebarToggle[data-tooltip]::after {
+  border-radius: 999px;
+}
+
+.palette-groups {
+  display: grid;
+  gap: 12px;
+}
+
+.palette-panel h2 {
+  margin-bottom: 10px;
+}
+
+.palette-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.palette-swatch {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
+.swatch-chip {
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.palette-swatch strong {
+  font-size: 0.85rem;
+  color: var(--color-slate-900);
+}
+
+.palette-swatch code {
+  font-size: 0.78rem;
+  color: var(--color-slate-600);
+}
+
+@media (max-width: 720px) {
+  .view {
+    padding: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+}

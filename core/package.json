@@ -1,0 +1,17 @@
+{
+  "name": "@spa-foundation/core",
+  "version": "0.1.2",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./base.css": "./css/base.css",
+    "./shell.css": "./css/shell.css",
+    "./preset-classic.css": "./css/preset-classic.css",
+    "./preset-modern.css": "./css/preset-modern.css",
+    "./css/base.css": "./css/base.css",
+    "./css/shell.css": "./css/shell.css",
+    "./css/preset-classic.css": "./css/preset-classic.css",
+    "./css/preset-modern.css": "./css/preset-modern.css"
+  }
+}
