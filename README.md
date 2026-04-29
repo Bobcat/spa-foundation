@@ -52,3 +52,7 @@ The foundation provides two CSS presets that can be switched at runtime, plus a 
 ## Mobile Layout
 
 The shell adapts to mobile screens below 600px, turning the sidebar into a fixed top bar with an off-canvas menu.
+
+## License
+
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE).
